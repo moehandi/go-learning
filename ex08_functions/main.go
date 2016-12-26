@@ -26,7 +26,7 @@ func main()  {
 
 }
 
-// function decalaration no return values
+// function decalaration no return values & passing pointer as argument
 func operate(str *string, replaceWith string) {
 	*str = replaceWith // assign new value to address of str with *
 }
