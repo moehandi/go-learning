@@ -41,4 +41,19 @@ func main() {
 		fmt.Println("THe anim does not contain a variable of type Cat")
 	}
 
+	// another test with type switch
+	fmt.Println("With type switch")
+	switch t := anim.(type) {
+	case *Dog:
+		fmt.Printf("Type Dog  %T with value %v\n", t, t)
+	case *Cat:
+		fmt.Printf("Type Cat  %T with value %v\n", t, t)
+	//case string:
+	//	fmt.Printf("Type string with value %v\n", t)
+	case nil:
+		fmt.Printf("nil value, value %v\n", t)
+	default:
+		fmt.Printf("Unexpected type %T", t)
+	}
+
 }
