@@ -1,4 +1,5 @@
 // This example show differences between method which passed by pointer and non argument
+// see https://golang.org/doc/faq#methods_on_values_or_pointers
 package main
 
 import "fmt"
