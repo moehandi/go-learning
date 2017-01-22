@@ -10,13 +10,17 @@ func main()  {
 	file := "./file_read.txt"
 
 	content, err := ioutil.ReadFile(file)
-	if err != nil {
-		panic(err)
-	}
+	errorCheck(err)
 
 	// but it return the bytes
 	fmt.Println("Read from file", content)
 
 	result := string(content)
 	fmt.Println("Read from file", result)
+}
+
+func errorCheck(err error)  {
+	if err != nil {
+		panic(err)
+	}
 }
