@@ -2,10 +2,10 @@ package main
 
 import "fmt"
 
-// Declare global variable in this case, package scope. because startWith lower case
+// Declare global variable in this case, package scope. because start with LOWER CASE Letter
 var globalVar = "This global variable in this package"
 
-// Declare global variable that can be accessed from outside
+// Declare global variable that can be accessed from outside because start with UPPER CASE Letter
 var GlobalVar = "This global variable can be accessed from outside"
 
 func main()  {
@@ -13,10 +13,10 @@ func main()  {
 	fmt.Println(globalVar)
 
 	// declare variable with var
-	var numVar int8 = 3;
-	var strVar string = "this is string";
+	var numVar int8 = 3
+	var strVar string = "this is string"
 
-	fmt.Println(numVar);
+	fmt.Println(numVar)
 	fmt.Println(strVar)
 
 	// declare multiple variable
@@ -34,12 +34,13 @@ func main()  {
 
 	// variable without var
 	// but this only works inside function
-	asVar := 1
-	asVar1, asVar2, asVar3 := 1, 2, 3 // the sequence variable and value must be same
-	fmt.Println(asVar)
-	fmt.Println(asVar1, asVar2, asVar3)
+	noVar := 1
+	noVar1, noVar2, noVar3 := 1, 2, 3 // the sequence variable and value must be same
+	fmt.Println(noVar)
+	fmt.Println(noVar1, noVar2, noVar3)
 
-	// declare constant, const declaration is without var keyword
+	// declare constant, constant declaration is without var keyword
+	// Remeber constant declared without keyword "var" like variable
 	const constA = "constant A"
 	fmt.Println(constA)
 
