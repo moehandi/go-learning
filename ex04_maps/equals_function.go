@@ -35,10 +35,12 @@ func equals(x, y map[string] int) bool {
 	if len(x) != len(y) {
 		return false
 	}
+
 	for key, xValue := range x {
 		if yValue, ok := y[key]; !ok || yValue != xValue {
 			return false
 		}
 	}
+
 	return true
 }
