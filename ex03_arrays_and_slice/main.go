@@ -9,7 +9,7 @@ func main() {
 	fmt.Println("arr1:", len(arr1), arr1)
 	fmt.Println("element 1: ", arr1[1])
 
-	// try withour var
+	// try without var
 	arr2 := [3]int {1, 2, 3}
 	fmt.Println("arr2:", len(arr2), arr2)
 	fmt.Println("element 1: ", arr2[1])
@@ -59,7 +59,7 @@ func main() {
 		char = append(char, v)
 	}
 	fmt.Println("char result: ", char) // [72 101 108 108 111]
-	fmt.Printf("char result %q: ", char) // [72 101 108 108 111]
+	fmt.Printf("char result %q: \n", char) // [72 101 108 108 111]
 
 	// Now see how slice differ from array again
 	var arrD []int = []int {1, 2, 3, 4, 5}
@@ -69,6 +69,7 @@ func main() {
 	var sliceD = make([]int, 5)
 	fmt.Println("sliceD: ", len(sliceD), sliceD)
 	sliceD = make([]int, 8) // change slice size to 8
+	sliceD[2] = 9 // fill slice index 2 with 9. it's like array too
 	fmt.Println("now Sslice D is: ", len(sliceD), sliceD)
 
 	// get slice from array

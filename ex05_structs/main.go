@@ -39,8 +39,18 @@ func main() {
 	// and so on another field set with initial value
 	fmt.Println(moehandi)
 
+	// struct also can be created with new keyword or &
+	newEmployee := new(Employee)
+	newEmployee.Id = 123
+	newEmployee.Name = "mr.gopher"
+	fmt.Println(newEmployee)
 
-	// kinds of create instance structs
+	// its called literal of struct, we provide all fields
+	newEmployee2 := &Employee{189,"newer","jakarta",time.Now(),"coder", 2000000, 9099000}
+	fmt.Println(newEmployee2)
+
+
+	// kinds of create instance struct
 	var point0 Point // same as before
 	point0.X = 1
 	point0.Y = 2

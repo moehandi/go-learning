@@ -2,6 +2,11 @@ package main
 
 import "fmt"
 
+// format map[key]valueType
+// The key type can be any type for which the operations == and != are defined,
+// like: (string, int, float)
+// So arrays, slices and structs cannot be used as key type, but pointers and interface types can.
+// The value type can be any type; by using the empty interface as type
 func main() {
 	var ourAges = make(map[string]int)
 	ourAges["adry"] = 26
@@ -28,7 +33,6 @@ func main() {
 		fmt.Printf("%s is %d \n", name, age)
 	}
 
-
 	age, ok := ages["andi"] // return 26 true
 	fmt.Println("age, ok", age, ok)
 
@@ -46,7 +50,6 @@ func main() {
 	if _, ok3 := ages["boy"]; !ok3 {
 		fmt.Println("there is no boy key")
 	}
-
 
 	// nil map, see there is nothing assignment '=', make
 	var nilMap map[string]int
