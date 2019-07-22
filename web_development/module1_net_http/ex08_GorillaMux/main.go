@@ -1,10 +1,10 @@
 package main
 
 import (
-		"net/http"
-		"fmt"
-		"log"
-		"github.com/gorilla/mux"
+	"fmt"
+	"github.com/gorilla/mux"
+	"log"
+	"net/http"
 )
 
 func GetApi(w http.ResponseWriter, r *http.Request) {

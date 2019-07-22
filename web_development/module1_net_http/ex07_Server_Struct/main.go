@@ -1,10 +1,10 @@
 package main
 
 import (
-		"net/http"
-		"fmt"
-		"log"
-		"time"
+	"fmt"
+	"log"
+	"net/http"
+	"time"
 )
 
 func messageHandleFunc(w http.ResponseWriter, r *http.Request) {
