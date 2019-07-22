@@ -1,9 +1,9 @@
 package main
 
 import (
-		"net/http"
-		"log"
-		"fmt"
+	"fmt"
+	"log"
+	"net/http"
 )
 
 type myHandler  struct {

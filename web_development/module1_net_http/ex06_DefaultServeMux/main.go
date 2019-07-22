@@ -1,9 +1,9 @@
 package main
 
 import (
-		"net/http"
-		"fmt"
-		"log"
+	"fmt"
+	"log"
+	"net/http"
 )
 
 func messageHandleFunc(w http.ResponseWriter, r *http.Request) {
